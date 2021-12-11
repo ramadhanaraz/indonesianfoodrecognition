@@ -14,7 +14,7 @@ class_names = {0: 'Ayam Bakar',
 
 model = load_model('Gambar_retrain.h5')
 
-model._make_predict_function()
+model.make_predict_function()
 
 def predict_label(img_path):
 	i = image.load_img(img_path, target_size=(300,300))
